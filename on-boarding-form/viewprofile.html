@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/prostyle.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <div class="card">
+          <div class="card_text">
+            <h2 id="hname"></h2>
+          </div>
+          <ul class="card_info">
+            <li>
+              <span class="card_info_stats">First Name</span>
+              <span id="fname"></span>
+            </li>
+            <li>
+              <span class="card_info_stats">Last Name</span>
+              <span id="lname"></span>
+            </li>
+            <li>
+                <span class="card_info_stats">Email</span>
+                <span id="email"></span>
+              </li>
+            <li>
+              <span class="card_info_stats">Date of Birth</span>
+              <span id="date"></span>
+            </li>            
+            <li>
+              <span class="card_info_stats">Contact</span>
+              <span id="contact"></span>
+            </li>
+          </ul>
+          <div class="card__action">
+            <a href="./edit.html"><button  class="card_action_button card_action-follow">Edit</button></a>
+            <a href="./login.html"><button class="card_action_button card_action-message">Logout</button></a>
+          </div>
+        </div>
+      </main>
+</body>
+<script src="./js/profile.js"></script>
+<script type="text/javascript">
+    function preventBack() {
+        window.history.forward();
+    } setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="log">Login</div>
+    <div class="content">
+      <form action="" id="form" >
+        <div class="user-details">
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+              </svg></span>
+            <label class="details">Email</label>
+            <input type="text" id="form_email" name="email" class="form-control email" placeholder="Enter your email"
+              required>
+            <span class="error_form" id="email_error_message" style="font-size: 16px; color:red;"></span>
+          </div>
+          
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+              </svg></span>
+            <label class="details">Password</label>
+            <input type="password" id="form_password" name="password" class="form-control password"
+              placeholder="Enter your password" required>
+            <span class="error_form" id="password_error_message" style="font-size: 16px; color:red;"></span>
+            <span><input type='checkbox' id='logtoggle'>&nbsp; <span id='logtoggleText'>Show Password</span></span>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="button">
+            <input type="button" id="login" name="submit" value="Login">
+                <a href="./index.html" class="register">Not a member Sign Up?</a>              
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="./js/login.js"></script>
+</html>

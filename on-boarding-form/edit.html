@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title">User Profile</div>
+    <div class="content">
+      <form action="" id="form" >
+        <div class="user-details">
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg></span>
+            <label class="details">First Name</label>
+            <input type="text" id="form_fname" name="fName" class="form-control fname" placeholder="Enter your name">
+            <span class="error_form" id="fname_error_message" style="font-size: 16px; color:red;"></span>
+          </div>
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg></span>
+            <label class="details">Last Name</label>
+            <input type="text" id="form_lname" name="lName" class="form-control lname" placeholder="Enter your username"
+              required>
+            <span class="error_form" id="lname_error_message" style="font-size: 16px; color:red;"></span>
+          </div>
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+              </svg></span>
+            <label class="details">Email</label>
+            <input type="text" id="form_email" name="email" class="form-control email" placeholder="Enter your email"
+              required>
+            <span class="error_form" id="email_error_message" style="font-size: 16px; color:red;"></span>
+          </div>
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
+              </svg></span>
+            <label class="details">Date of Birth</label>
+            <input type="date" id="form_date" name="date" class="form-control date" placeholder="Enter your number"
+              required>
+            <span class="error_form" id="date_error_message" style="font-size: 16px; color:red;"></span>
+          </div>
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg></span>
+            <label class="details">Phone Number</label>
+            <input type="text" id="form_contact" name="contact" class="form-control contact"
+              placeholder="Enter your contact" required>
+            <span class="error_form" id="contact_error_message" style="font-size: 16px; color:red;"></span>
+          </div>
+          <div class="input-box">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+              </svg></span>
+            <label class="details">Password</label>
+            <input type="password" id="form_password" name="password" class="form-control password"
+              placeholder="Enter your password" required>
+            <span class="error_form" id="password_error_message" style="font-size: 16px; color:red;"></span>
+            <span><input type='checkbox' id='pro_toggle'>&nbsp; <span id='pro_toggleText'>Show Password</span></span>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="button">
+            <input type="button" id="update" name="submit" class="edit-btn" value="Update">
+            <input type="submit" name="submit" id="submit" class="edit-btn" onclick="onDownload()" value="JSON">
+            <a href="./viewprofile.html" class="edit-btn cancel">Cancel</a>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+<script src="./js/edit.js"></script>
+<script src="./js/update.js"></script>
+<script src="./js/json.js"></script>
+</html>
